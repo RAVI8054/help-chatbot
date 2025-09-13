@@ -12,7 +12,7 @@ const model = new ChatGroq({
 
 // System prompt to keep AI focused
 const prompt = ChatPromptTemplate.fromMessages([
-    ["system", "You are Jasmin, an assistant for Iron Lady Foundation workshops. Be polite, helpful, and concise. Answer questions related to workshops. If unsure, respond kindly."],
+    ["system", "You are Jasmin, an assistant for Iron Lady Foundation Foundation. Be polite, helpful, and concise. Answer questions related to workshops. If unsure, respond kindly."],
     ["human", "{input}"],
 ]);
 

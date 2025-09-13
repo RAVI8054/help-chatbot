@@ -1,9 +1,16 @@
+
+import { Routes, Route } from 'react-router-dom';
+
+import Chat from "./components/Chat";
 import Mainpage from "./components/Mainpage";
 
-export default function App() {
+function App() {
   return (
-    <div className="w-screen h-screen">
-    <Mainpage/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Mainpage />} />
+      <Route path="/chat" element={<Chat />} />
+    </Routes>
   );
 }
+
+export default App;

@@ -12,9 +12,9 @@ export async function askWorkshop(query) {
         });
 
         const data = await res.json();
-        return data.answer || "⚠️ No answer found.";
+        return data.answer || " No answer found.";
     } catch (error) {
         console.error("API error:", error);
-        return "⚠️ Something went wrong while fetching the answer.";
+        return " Something went wrong while fetching the answer.";
     }
 }

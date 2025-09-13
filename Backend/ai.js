@@ -7,7 +7,7 @@ dotenv.config();
 
 const model = new ChatGroq({
     apiKey: process.env.GROQ_API_KEY,
-    model: "llama3-8b-8192", 
+    model: "llama-3.1-8b-instant", 
 });
 
 // System prompt to keep AI focused

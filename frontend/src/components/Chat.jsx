@@ -48,7 +48,7 @@ export default function Chat() {
             console.error(err);
             setMessages([
                 ...newMessages,
-                { type: "bot", text: "⚠️ Server error, please try again later." },
+                { type: "bot", text: " Server error, please try again later." },
             ]);
         }
 
@@ -66,7 +66,7 @@ export default function Chat() {
                     Back
                 </button>
                 <div className="hidden md:block text-red-800 font-semibold animate-pulse text-center">
-                    ⏳ Please wait for response...
+                     Please wait for response...
                 </div>
                 <button
                     onClick={clearChat}
